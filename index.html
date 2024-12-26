@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hariharan.Vijayakumar | MCA Student</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+
+  <!-- Navbar -->
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Hariharan.Vijayakumar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto drop">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        
+        <!-- Dropdown for Resume -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="resumeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="resumeDropdown">
+            <li><a class="dropdown-item" href="#education">Education</a></li>
+            <li><a class="dropdown-item" href="./projects.html">Projects</a></li>
+            <li><a class="dropdown-item" href="#resume">Resume</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <header id="home" class="vh-100 d-flex justify-content-center align-items-center text-center" style="position: relative; perspective: 1000px;">
+    <!-- 3D image background -->
+    <div class="background-3d" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('./images/freepik__upload__98384.jpeg') no-repeat center center/cover; transform: translateZ(-200px) scale(1.2); z-index: 0;">
+    </div>
+  
+    <!-- Overlay -->
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+  
+    <!-- Content -->
+    <div class="content" style="z-index: 2; color: white;">
+      <h1 class="display-4 animate-heading" style="opacity: 0; animation: fadeIn 1.5s forwards 0.5s;">Hariharan.Vijayakumar</h1>
+      <p class="lead animate-subheading" style="opacity: 0; animation: fadeIn 1.5s forwards 1s;">Software Developer</p>
+      <a href="#contact" class="btn btn-primary mt-3 animate-btn" style="opacity: 0; transition: 0.3s; animation: fadeIn 1.5s forwards 1.5s;">Get In Touch</a>
+    </div>
+  </header>
+  
+ 
+  
+  <!-- About Section -->
+  <section id="about" class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="p-4 bg-light rounded shadow-sm">
+          <h2 class="mb-3">About Me</h2>
+          <p>
+            I am a passionate software developer with a strong interest in building dynamic software and web applications. My skillset includes Python, HTML, CSS, and Bootstrap for front-end development, with MySQL databases and the Flask framework on the back end.
+          </p>
+          <p>
+            Throughout my studies and projects, I have successfully developed several software solutions, leveraging my skills in both full-stack and front-end development. I enjoy solving complex problems and creating intuitive, efficient applications.
+          </p>
+          <div class="d-flex align-items-center mt-4">
+            <i class="bi bi-award-fill text-primary" style="font-size: 24px; margin-right: 10px;"></i>
+            <p class="mb-0">Dedicated, problem-solving, and results-driven approach.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="./images/hari-removebg.png" class="img-fluid rounded-circle shadow-lg" alt="Your Photo" style="max-width: 80%;">
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Resume Section -->
+  <section id="resume" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">My Resume</h2>
+        <p class="text-center mb-4">
+            Download my <a href="./images/HARIHARAN_CV.pdf" class="text-primary fw-bold">resume here</a>.
+        </p>
+        <div class="resume-card card shadow-sm mx-auto" style="max-width: 400px;">
+            <div class="card-body">
+                <h5 class="card-title">Why My Resume?</h5>
+                <p class="card-text">
+                    My resume highlights my academic achievements, projects, and skills that make me a strong candidate for software development roles.
+                </p>
+                <a href="./images/HARIHARAN_CV.pdf" class="btn btn-primary" download>Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Education Section with Cards -->
+<!-- Education Section with Cards -->
+<section id="education" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">My Education</h2>
+    <div class="row d-flex align-items-stretch">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm border-light">
+          <div class="card-body text-center">
+            <div class="icon mb-3">
+              <i class="bi bi-graduation-cap" style="font-size: 50px; color: #007bff;"></i>
+            </div>
+            <h5 class="card-title">MCA - Takshashila University</h5>
+            <p class="card-text">2023 - 2025</p>
+            <p class="card-text">
+              I have completed my Master of Computer Applications (MCA) at Takshashila University with a CGPA of 9.2. Throughout my studies, I have undertaken numerous projects and internships, gaining practical experience in software development. I have worked collaboratively as part of a team on several projects, enhancing my skills in project management and teamwork.
+            </p>
+            <p class="card-text">
+              Additionally, I actively participated in various academic events and took part in college symposiums, where I presented research papers. These experiences have not only broadened my knowledge but also honed my communication and presentation skills.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm border-light">
+          <div class="card-body text-center">
+            <div class="icon mb-3">
+              <i class="bi bi-graduation-cap" style="font-size: 50px; color: #007bff;"></i>
+            </div>
+            <h5 class="card-title">BCA - Srimath Sivagnana Balaya Swamigal Tamil Arts and Science College</h5>
+            <p class="card-text">2020 - 2023</p>
+            <p class="card-text">
+              Completed my Bachelor of Computer Applications (BCA) at Srimath Sivagnana Balaya Swamigal Tamil Arts and Science College, Mailam, affiliated with Thiruvalluvar University, with an overall score of 80%. My coursework focused on software development, database systems, and web technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+          <div class="col-md-6 text-center">
+            <h4>Follow Me</h4>
+            <div class="social-icons">
+              <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:your-email@example.com" target="_blank"><i class="bi bi-envelope"></i></a>
+              <a href="https://instagram.com/your-instagram-profile" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2024 Hariharan.Vijayakumar. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/@iconify-icons/bootstrap"></script>
+  <script>
+    window.addEventListener('load', function() {
+      document.querySelector('.animate-heading').style.opacity = '1';
+      document.querySelector('.animate-subheading').style.opacity = '1';
+      document.querySelector('.animate-btn').style.opacity = '1';
+    });
+  </script>
+  
+</body>
+</html>
