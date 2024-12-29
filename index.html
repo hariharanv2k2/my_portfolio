@@ -22,105 +22,74 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto drop">
         <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#Education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Projects">Projects</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Certificates">Certificates</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
-        
-        <!-- Dropdown for Resume -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="resumeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            More
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="resumeDropdown">
-            <li><a class="dropdown-item" href="#education">Education</a></li>
-            <li><a class="dropdown-item" href="./projects.html">Projects</a></li>
-            <li><a class="dropdown-item" href="#resume">Resume</a></li>
-          </ul>
-        </li>
-        
       </ul>
     </div>
   </div>
 </nav>
 
-
-<header id="home" class="vh-100 d-flex justify-content-center align-items-center text-center" style="position: relative; perspective: 1000px; overflow: hidden;">
-  <!-- 3D image background -->
-  <div class="background-3d" style="
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        width: 100%; 
-        height: 100%; 
-        background: url('./images/freepik__upload__98384.jpeg') no-repeat center center/cover; 
-        transform: translateZ(-200px) scale(1.2); 
-        z-index: 0;">
-  </div>
-
-  <!-- Overlay -->
-  <div class="overlay" style="
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        width: 100%; 
-        height: 100%; 
-        background: rgba(0, 0, 0, 0.6); 
-        z-index: 1;">
-  </div>
-
-  <!-- Content -->
-  <div class="content" style="z-index: 2; color: white; padding: 0 1rem;">
-    <h1 class="animate-heading display-4 fw-bold" style="opacity: 0; font-size: clamp(1.5rem, 5vw, 3rem); animation: fadeIn 1.5s forwards 0.5s;">
-      Hariharan.Vijayakumar
-    </h1>
-    <p class="animate-subheading lead" style="opacity: 0; font-size: clamp(1rem, 4vw, 1.5rem); animation: fadeIn 1.5s forwards 1s;">
-      Software Developer
-    </p>
-    <a href="#contact" class="btn btn-primary btn-lg mt-3 animate-btn" style="
-          opacity: 0; 
-          padding: 0.75rem 1.5rem; 
-          font-size: 1rem; 
-          border-radius: 50px; 
-          animation: fadeIn 1.5s forwards 1.5s; 
-          transition: transform 0.3s;">
-      Get In Touch
-    </a>
-  </div>
-</header>
-
-<!-- CSS for Animations -->
-<style>
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Button hover effect */
-  .btn-primary:hover {
-    transform: scale(1.1);
-    background-color: #0056b3;
-  }
-
-  /* Make sure images scale properly */
-  .background-3d {
-    will-change: transform;
-  }
-</style>
-
+<section class="head">
+  <header id="home" class="vh-50 d-flex justify-content-center align-items-center text-center" style="position: relative; perspective: 1000px; overflow: hidden; height: 50vh;">
+    <!-- Animated 3D Background -->
+    <div class="background-3d" style="
+          position: absolute; 
+          top: 0; 
+          left: 0; 
+          width: 100%; 
+          height: 100%; 
+          background: url('./images/freepik__upload__98384.jpeg') no-repeat center center/cover; 
+          transform: translateZ(-200px) scale(1.2); 
+          animation: slideBackground 15s infinite linear;
+          z-index: 0;">
+    </div>
   
- 
+    <!-- Gradient Overlay -->
+    <div class="overlay" style="
+          position: absolute; 
+          top: 0; 
+          left: 0; 
+          width: 100%; 
+          height: 100%; 
+          background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)); 
+          z-index: 1;">
+    </div>
   
+    <!-- Content -->
+    <div class="content" style="z-index: 2; color: white; padding: 0 1rem; text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);">
+      <h1 class="animate-heading display-4 fw-bold" style="
+            opacity: 0; 
+            font-size: clamp(1.5rem, 5vw, 2.5rem); 
+            animation: fadeIn 1.5s forwards 0.5s;">
+        Hariharan.Vijayakumar
+      </h1>
+      <p class="animate-subheading lead mb-4" style="
+            opacity: 0; 
+            font-size: clamp(1rem, 4vw, 1.25rem); 
+            animation: fadeIn 1.5s forwards 1s;">
+        Software Developer | Innovator | Problem Solver
+      </p>
+    </div>
+  </header>
+</section>
+
+
   <!-- About Section -->
   <section id="about" class="container py-5">
     <div class="row align-items-center">
@@ -140,35 +109,22 @@
         </div>
       </div>
       <div class="col-md-6 text-center">
-        <img src="./images/hari-removebg.png" class="img-fluid rounded-circle shadow-lg" alt="Your Photo" style="max-width: 80%;">
+        <div class="profile-container" style="position: relative; display: inline-block;">
+          <img src="./images/myprofesional_img.jpeg" class="img-fluid rounded-circle shadow-lg" 
+               alt="Your Photo" style="width: 315px; height: 327px; object-fit: cover; border: 8px solid #007bff; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);">
+          <div class="profile-overlay" style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); background-color: #007bff; color: white; padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: bold;">
+            Software Developer
+          </div>
+        </div>
       </div>
     </div>
   </section>
   
+  
+  
 
-  <!-- Resume Section -->
-  <section id="resume" class="py-5 bg-light">
-    <div class="container text-center">
-        <h2 class="mb-4">My Resume</h2>
-        <p class="text-center mb-4">
-            Download my <a href="./images/HARIHARAN_CV.pdf" class="text-primary fw-bold">resume here</a>.
-        </p>
-        <div class="resume-card card shadow-sm mx-auto" style="max-width: 400px;">
-            <div class="card-body">
-                <h5 class="card-title">Why My Resume?</h5>
-                <p class="card-text">
-                    My resume highlights my academic achievements, projects, and skills that make me a strong candidate for software development roles.
-                </p>
-                <a href="./images/HARIHARAN_CV.pdf" class="btn btn-primary" download>Download Resume</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-  <!-- Education Section with Cards -->
-<!-- Education Section with Cards -->
-<section id="education" class="py-5">
+ <!-- Education Section with Cards -->
+<section id="Education" class="mb-3">
   <div class="container">
     <h2 class="text-center mb-4">My Education</h2>
     <div class="row d-flex align-items-stretch">
@@ -208,9 +164,178 @@
   </div>
 </section>
 
+<!-- Projects Section with Increased Space -->
+<section id="Projects" class="mt-1">
+  <div class="container mt-3 pt-2">
+    <h1 class="text-center my-4">My Projects</h1>
+  
+    <div class="row" id="projects">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./images/crawler.png" class="card-img-top" alt="Project 1">
+          <h5 class="card-title">Crawler based Search Engine</h5> <!-- Project title below the image -->
+          <div class="card-content">
+            <p class="card-text">
+              "Developed a web crawler using Python Flask, MySQL, HTML, CSS, and Bootstrap to automate data extraction from web sources. It efficiently stores and organizes data in MySQL for easy retrieval and analysis, featuring a responsive, user-friendly interface for initiating searches and viewing results in real-time."
+            </p>
+            <p class="card-text"><strong>Technologies Used:</strong> Python, Flask, HTML, CSS, Bootstrap</p>
+            <a href="https://github.com/hariharanv2k2/Web_Crawler" class="btn btn-primary" target="_blank">Github Link</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./images/chatbot.png" class="card-img-top" alt="Project 2">
+          <h5 class="card-title">AI-Powered Chatbot with Real-Time Interaction</h5>
+          <div class="card-content">
+            <p class="card-text">
+              An AI-driven chatbot application enabling real-time conversations, built with AI Studio, Python Flask, and a responsive interface using HTML, CSS, and Bootstrap. It offers natural language processing for accurate, customizable responses.
+            </p>
+            <p class="card-text"><strong>Technologies Used:</strong> Python, Flask, HTML, CSS, Bootstrap</p>
+            <a href="https://github.com/hariharanv2k2/chatbot" class="btn btn-primary" target="_blank">Github Link</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./images/python-ocr.jpg" class="card-img-top" alt="Project 3">
+          <h5 class="card-title">Image-to-Text Converter Using OCR and Flask</h5>
+          <div class="card-content">
+            <p class="card-text">
+              This project is an OCR (Optical Character Recognition) web application built with Flask. It allows users to upload images, extracts text from them using Tesseract OCR, and saves the extracted text as a file. The application provides a simple, user-friendly interface for converting image-based text into editable digital formats.
+            </p>
+            <p class="card-text"><strong>Technologies Used:</strong> Python, Flask, HTML, CSS, Bootstrap</p>
+            <a href="https://github.com/hariharanv2k2/Image-to-Text-Converter-Using-OCR-and-Flask" class="btn btn-primary" target="_blank">Github Link</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Add more project cards as needed -->
+  
+    </div>
+  </div>
+</section>
 
-  
-  
+<section>
+   <!-- Resume Section -->
+   <section id="resume" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">My Resume</h2>
+      <p class="text-center mb-4">
+          View My Resume <a href="#" class="text-primary fw-bold" data-bs-toggle="modal" data-bs-target="#resumeModal">here</a>.
+      </p>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <!-- Embed PDF -->
+                      <iframe src="./images/HARIHARAN_CV.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+        <div class="resume-card card shadow-sm mx-auto" style="max-width: 400px;">
+            <div class="card-body">
+                <h5 class="card-title">Why My Resume?</h5>
+                <p class="card-text">
+                    My resume highlights my academic achievements, projects, and skills that make me a strong candidate for software development roles.
+                </p>
+                <a href="./images/HARIHARAN_CV.pdf" class="btn btn-primary" download>Download Resume</a>
+            </div>
+        </div>
+    </div>
+
+  </section>
+</section>
+
+<!-- Certificates Section -->
+<section id="Certificates" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">My Certificates</h2>
+    <div class="row">
+      
+      <!-- Certificate 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./images/Data+Science+and+AIML+Internship+(45days)_page-0001.jpg" class="card-img-top" alt="Certificate 1" data-bs-toggle="modal" data-bs-target="#certificateModal1">
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./images/null_page-0001.jpg" class="card-img-top" alt="Certificate 2" data-bs-toggle="modal" data-bs-target="#certificateModal2">
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./images/Hariharan v_page-0001.jpg" class="card-img-top" alt="Certificate 3" data-bs-toggle="modal" data-bs-target="#certificateModal3">
+        </div>
+      </div>
+
+      <!-- Modal for Certificate 1 -->
+      <div class="modal fade" id="certificateModal1" tabindex="-1" aria-labelledby="certificateModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificateModalLabel1">Certificate 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./images/Data+Science+and+AIML+Internship+(45days)_page-0001.jpg" class="img-fluid" alt="Certificate 1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Certificate 2 -->
+      <div class="modal fade" id="certificateModal2" tabindex="-1" aria-labelledby="certificateModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificateModalLabel2">Certificate 2</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./images/null_page-0001.jpg" class="img-fluid" alt="Certificate 2">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Certificate 3 -->
+      <div class="modal fade" id="certificateModal3" tabindex="-1" aria-labelledby="certificateModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificateModalLabel3">Certificate 3</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./images/Hariharan v_page-0001.jpg" class="img-fluid" alt="Certificate 3">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
 
  <!-- Contact Section -->
 <section id="contact" class="py-5 bg-light">
@@ -238,7 +363,9 @@
         <h4>Follow Me</h4>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/hariharan-vijayakumar-474855328/" target="_blank" class="me-3"><i class="bi bi-linkedin" style="font-size: 2rem;"></i></a>
-          <a href="https://hariharan.v2k2@gmail.com" target="_blank" class="me-3"><i class="bi bi-envelope" style="font-size: 2rem;"></i></a>
+          <a href="mailto:hariharan.v2k2@gmail.com" target="_blank" class="me-3">
+            <i class="bi bi-envelope" style="font-size: 2rem;"></i>
+          </a>
           <a href="https://github.com/hariharanv2k2" target="_blank"><i class="bi bi-github" style="font-size: 2rem;"></i></a>
         </div>
       </div>
