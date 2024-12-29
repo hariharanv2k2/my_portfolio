@@ -142,4 +142,79 @@
   background-color: #f8f9fa; /* Change background on hover */
   color: black; /* Ensure text stays black on hover */
 }
+    /* Custom styles for card */
+    .card {
+      height: 100%;
+      border: 1px solid #007bff; /* Optional: Add border for emphasis */
+      position: relative; /* Positioning for absolute children */
+      cursor: pointer; /* Change cursor to pointer on hover */
+      overflow: hidden; /* Prevent content overflow */
+      transition: transform 0.2s; /* Optional: Add a hover effect for the card */
+    }
+    .card:hover {
+      transform: scale(1.05); /* Optional: Scale effect on hover */
+    }
+    .card-img-top {
+      height: 300px; /* Fixed height for images */
+      object-fit: cover; /* Ensures image covers area without distortion */
+    }
+    .card-title {
+      margin: 10px 0; /* Add some margin to the title */
+      text-align: center; /* Center align the title */
+    }
+    .card-content {
+      position: absolute; /* Absolute positioning */
+      top: 0; /* Align to top */
+      left: 0; /* Align to left */
+      right: 0; /* Align to right */
+      bottom: 0; /* Align to bottom */
+      display: flex; /* Flexbox for centering */
+      flex-direction: column; /* Stack items vertically */
+      justify-content: center; /* Center vertically */
+      align-items: center; /* Center horizontally */
+      background: rgba(255, 255, 255, 0.9); /* White background with transparency */
+      opacity: 0; /* Initially hidden */
+      transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    }
+    .card:hover .card-content {
+      opacity: 1; /* Show content on hover */
+    }
+    .card-text{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    /* Background Animation */
+    @keyframes slideBackground {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+  
+    /* Text Animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    /* Button Hover Effect */
+    .btn-primary {
+      background: linear-gradient(90deg, #007bff, #0056b3);
+      border: none;
+      transition: all 0.3s ease;
+    }
+  
+    .btn-primary:hover {
+      background: linear-gradient(90deg, #0056b3, #007bff);
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 123, 255, 0.6);
+    }
 
